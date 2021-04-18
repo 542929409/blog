@@ -4,6 +4,89 @@
   
     
     <entry>
+      <title>Web方向系统化学习</title>
+      <link href="/posts/167542e2/"/>
+      <url>/posts/167542e2/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> CTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> CTFHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python Web开发——Flask入门</title>
+      <link href="/posts/d8802241/"/>
+      <url>/posts/d8802241/</url>
+      
+        <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><ul><li>建议在Python 2.7上安装Flask</li><li>建议安装virtualenv：可以帮助用户并行创建多个Python环境，避免不同版本的库之间的兼容性问题。</li></ul><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pip2 install virtualenv 安装</span><br><span class="line">sudo apt-get install virtualenv Ubuntu安装（有对应软件包）</span><br><span class="line"></span><br><span class="line">virtualenv venv 创建新的虚拟环境</span><br><span class="line"></span><br><span class="line">bin/activate 在 Linux / OS X 上激活相应的环境</span><br><span class="line">scripts\activate 在 Windows 上激活相应的环境</span><br></pre></td></tr></tbody></table></figure><p>之后可以安装Flask：<code>pip2 install flask</code></p><h2 id="创建应用"><a href="#创建应用" class="headerlink" title="创建应用"></a>创建应用</h2><h3 id="第一个应用——Hello-py"><a href="#第一个应用——Hello-py" class="headerlink" title="第一个应用——Hello.py"></a>第一个应用——Hello.py</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span>():</span></span><br><span class="line">   <span class="keyword">return</span> <span class="string">'Hello World'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">   app.run()</span><br></pre></td></tr></tbody></table></figure><ul><li>Flask类的<strong>route()</strong>函数是一个装饰器，它告诉应用程序哪个URL应该调用相关的函数。</li></ul><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.route(rule, options)</span><br></pre></td></tr></tbody></table></figure><ul><li><strong>rule</strong> 参数表示与该函数的URL绑定。</li><li><strong>options</strong> 是要转发给基础Rule对象的参数列表。</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> HTML </tag>
+            
+            <tag> Flask </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用MDUI构建前端网页</title>
+      <link href="/posts/b8e9526b/"/>
+      <url>/posts/b8e9526b/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ul><li><strong><a href="https://www.mdui.org/">MDUI官网</a></strong></li><li><strong>基础模板：</strong></li></ul><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-cmn-Hans"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"renderer"</span> <span class="attr">content</span>=<span class="string">"webkit"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"force-rendering"</span> <span class="attr">content</span>=<span class="string">"webkit"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><ul><li><strong>兼容性：</strong></li></ul><table><thead><tr><th align="center">浏览器</th><th align="center">兼容性</th></tr></thead><tbody><tr><td align="center"><strong>Chrome</strong></td><td align="center"><strong>完全兼容</strong></td></tr><tr><td align="center"><strong>Firefox</strong></td><td align="center"><strong>完全兼容</strong></td></tr><tr><td align="center"><strong>Safari</strong></td><td align="center"><strong>Last Two Versions</strong></td></tr><tr><td align="center"><strong>Opera</strong></td><td align="center"><strong>完全兼容</strong></td></tr><tr><td align="center"><strong>Edge</strong></td><td align="center"><strong>完全兼容</strong></td></tr><tr><td align="center"><strong>IE</strong></td><td align="center"><strong>11+</strong></td></tr><tr><td align="center"><strong>Android Browser</strong></td><td align="center"><strong>4.4+</strong></td></tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端架构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+            <tag> MDUI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BUUCTF-Web-部分Writeup</title>
       <link href="/posts/4860721e/"/>
       <url>/posts/4860721e/</url>
@@ -37,7 +120,7 @@
       <link href="/posts/15a1b8f6/"/>
       <url>/posts/15a1b8f6/</url>
       
-        <content type="html"><![CDATA[<h1 id="Tkinter"><a href="#Tkinter" class="headerlink" title="Tkinter"></a>Tkinter</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install tkinter</span><br></pre></td></tr></tbody></table></figure><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> *</span><br></pre></td></tr></tbody></table></figure><h1 id="PyQt（以PyQt5为例）"><a href="#PyQt（以PyQt5为例）" class="headerlink" title="PyQt（以PyQt5为例）"></a>PyQt（以PyQt5为例）</h1><h1 id="wxpython"><a href="#wxpython" class="headerlink" title="wxpython"></a>wxpython</h1><p><a href="https://github.com/wxFormBuilder/wxFormBuilder">https://github.com/wxFormBuilder/wxFormBuilder</a></p><p><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly"><img class="entered loading" src= "https://cdn.jsdelivr.net/gh/542929409/cdn@master/basic/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" data-ll-status="loading" alt="tag"></a><a target="_blank" rel="noopener" style="display:inline;margin-left:7px" href="https://www.jsdelivr.com/github"><img class="entered loading" src= "https://cdn.jsdelivr.net/gh/542929409/cdn@master/basic/loading.gif" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" data-ll-status="loading" alt="tag"></a><a target="_blank" rel="noopener" style="display:inline;margin-left:7px" href="https://github.com/"><img class="entered loading" src= "https://cdn.jsdelivr.net/gh/542929409/cdn@master/basic/loading.gif" data-lazy-src="https://img.shields.io/badge/Hosted-GitHub-brightgreen?style=flat&amp;logo=GitHub" data-ll-status="loading" alt="tag"></a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="Tkinter"><a href="#Tkinter" class="headerlink" title="Tkinter"></a>Tkinter</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install tkinter</span><br></pre></td></tr></tbody></table></figure><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> *</span><br></pre></td></tr></tbody></table></figure><h1 id="PyQt（以PyQt5为例）"><a href="#PyQt（以PyQt5为例）" class="headerlink" title="PyQt（以PyQt5为例）"></a>PyQt（以PyQt5为例）</h1><h1 id="wxpython"><a href="#wxpython" class="headerlink" title="wxpython"></a>wxpython</h1><p><a href="https://github.com/wxFormBuilder/wxFormBuilder">https://github.com/wxFormBuilder/wxFormBuilder</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
